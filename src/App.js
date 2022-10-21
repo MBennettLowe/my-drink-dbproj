@@ -6,7 +6,7 @@ import
 function App() {
   return(
     <div className='box'>
-      <h1>Margarita Cocktail Database</h1>
+      <h1>Margarita Cocktail DB</h1>
 
     {
       Drinks.map((drink) => {
