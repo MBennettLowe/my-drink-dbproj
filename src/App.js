@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Drinks from './drinks';
+import 
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className='box'>
+      <h1>Margarita Cocktail Database</h1>
+
+    {
+      Drinks.map((drink) => {
+        return(
+          <div>
+          <div key={drink.idDrink}></div>
+          <strong>{drink.strDrink}</strong>
+          <img src="{drink.strImageSource}"></img>
+         </div>
+          
+        )
+        
+      })
+    }
+
+
     </div>
-  );
+
+  )
+
+  
+ 
 }
 
 export default App;
